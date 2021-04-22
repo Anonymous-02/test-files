@@ -48,8 +48,7 @@ var Incremancer;
 	}
 	let c,u,p,g,m,b,y,f,x;
 	(e=>{
-		"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(
-			e,
+		"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,
 			Symbol.toStringTag,{value:"Module"}
 		),
 		Object.defineProperty(e,"__esModule",{value:!0})
@@ -281,26 +280,7 @@ var Incremancer;
 					}
 				}
 				(e),
-				e.loader.add("sprites/ground.json")
-					.add("sprites/megagraveyard.png")
-					.add("sprites/graveyard.json")
-					.add("sprites/buildings.json")
-					.add("sprites/humans.json")
-					.add("sprites/cop.json")
-					.add("sprites/dogs.json")
-					.add("sprites/army.json")
-					.add("sprites/doctor.json")
-					.add("sprites/zombie.json")
-					.add("sprites/golem.json")
-					.add("sprites/bonecollector.json")
-					.add("sprites/harpy.json")
-					.add("sprites/objects2.json")
-					.add("sprites/fenceposts.json")
-					.add("sprites/trees2.json")
-					.add("sprites/fortress.json")
-					.add("sprites/tank.json")
-					.add("sprites/skeleton.json")
-					.load((function(){
+				e.loader.add("sprites/ground.json").add("sprites/megagraveyard.png").add("sprites/graveyard.json").add("sprites/buildings.json").add("sprites/humans.json").add("sprites/cop.json").add("sprites/dogs.json").add("sprites/army.json").add("sprites/doctor.json").add("sprites/zombie.json").add("sprites/golem.json").add("sprites/bonecollector.json").add("sprites/harpy.json").add("sprites/objects2.json").add("sprites/fenceposts.json").add("sprites/trees2.json").add("sprites/fortress.json").add("sprites/tank.json").add("sprites/skeleton.json").load((function(){
 						v.app=e,
 						N(),
 						x=new PIXI.TilingSprite(PIXI.Texture.from("grass.png")),
@@ -329,7 +309,7 @@ var Incremancer;
 						&&-1===document.referrer.indexOf("konggames.com")
 						||kongregateAPI.loadAPI((function(){
 							window.kongregate=kongregateAPI.getAPI(),
-							v.kongregate=!0,
+							v.kongregate=1,
 							v.loginInUsingPlayFab()
 						}))
 				),
@@ -337,10 +317,10 @@ var Incremancer;
 					"visibilitychange",
 					(function(){
 						"hidden"==document.visibilityState
-							?v.hidden=!0
-							:v.hidden=!1
+							?v.hidden=1
+							:v.hidden=0
 					}),
-					!1
+					0
 				)
 		},
 		window.onresize=function(){
